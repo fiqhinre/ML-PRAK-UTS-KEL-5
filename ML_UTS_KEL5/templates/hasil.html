@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    {% if predicted_type %}
+    <div class="body">
+        <div class="header">
+            <div class="logo-header">
+                <img src="{{url_for('static', filename='images/LEUCARE.png')}}">
+            </div>
+            <div class="field-menu-header">
+                <div class="menu" style="color: rgb(116, 9, 9);">
+                    HOME
+                </div>
+                <div class="menu" style="margin-left: 30px; color: rgb(116, 9, 9);">
+                    ABOUT
+                </div>
+                <a href="{{url_for('home')}}" style="text-decoration: none; color: inherit;">
+                <div class="button-deteksi" style="background-color: rgb(116, 9, 9);">
+                    HOME
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="result">
+            Predicted Leukemia Type:<br>
+            {{ predicted_type }}
+        </div>
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/LEUCARE.png')}}">
+            </div>
+            <div class="author-footer">
+                Developed by : PT. DFL SEJAHTERA
+            </div>
+        </div>
+    </div>
+        {% endif %}
+</body>
+</html>

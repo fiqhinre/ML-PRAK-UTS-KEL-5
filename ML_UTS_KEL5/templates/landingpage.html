@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEUCARE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="logo-header">
+                <img src="{{url_for('static', filename='images/LEUCARE.png')}}">
+            </div>
+            <div class="field-menu-header">
+                <div class="menu">
+                    HOME
+                </div>
+                <div class="menu" style="margin-left: 30px;">
+                    ABOUT
+                </div>
+                <a href="{{url_for('deteksi')}}" style="text-decoration: none; color: inherit;">
+                <div class="button-deteksi">
+                    coba
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="image-landingpage">
+            <div class="text-judul">
+                Harapan dalam Genggaman,<br/>Lawan Leukemia Kini Lebih Dekat.
+            </div>
+            <img src="{{url_for('static', filename='images/landingpage-image.png')}}">
+        </div>
+        <div class="field-definisi">
+            <div class="field-image-definisi">
+                <div class="image-2-definisi">
+                    <img src="{{url_for('static', filename='images/img-3-definisi.jpg')}}">
+                </div>
+                <div class="image-1-definisi">
+                    <img src="{{url_for('static', filename='images/img-1-definisi.png')}}">
+                </div>
+            </div>
+            <div class="field-judul-definisi">
+                <div class="light-line">
+
+                </div>
+                <div class="judul-definisi">
+                    Apa itu Leukemia?
+                </div>
+            </div>
+            <div class="isi-definisi">
+                Leukemia adalah kanker darah yang terjadi ketika sel darah putih (leukosit) tumbuh secara abnormal dan tidak terkendali di sumsum tulang<br/><br/>
+                Penyebab nya adalah terjadinya mutasi pada materi genetik sel darah yang menyebabkan sel darah terus tumbuh dan membelah
+            </div>
+            <div class="line-section-frame">
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/LEUCARE.png')}}">
+            </div>
+            <div class="author-footer">
+                Developed by : PT. DFL SEJAHTERA
+            </div>
+        </div>
+    </div>
+</body>
+</html>

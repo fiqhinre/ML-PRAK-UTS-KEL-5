@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leukemia Classifier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            width: 100%;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 5px;
+            width: calc(50% - 10px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px 0;
+            background-color: rgb(116, 9, 9);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(77, 7, 7);
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-top: 30px;
+        }
+
+        .result {
+            background-color: #e9f7ef;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 18px;
+            color: #28a745;
+            margin-top: 20px;
+        }
+
+        .field-form{
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            input[type="text"] {
+                width: 100%;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deteksi Jenis Leukemia</h1>
+
+        <div class="field-form">
+            <form action="/hasil" method="POST">
+                {% for col in ['1007_s_at', '1053_at', '117_at', '121_at', '1255_g_at',
+                            '1294_at', '1316_at', '1320_at', '1405_i_at', '1431_at',
+                            '1438_at', '1487_at', '1494_f_at', '1598_g_at', '160020_at',
+                            '1729_at', '1773_at', '177_at', '1861_at', '200000_s_at'] %}
+                    <label for="{{ col }}" style="font-family:'Times New Roman', Times, serif;">{{ col }}:</label>
+                    <input type="number" step="0.0001" id="{{ col }}" name="{{ col }}" required>
+                {% endfor %}
+
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

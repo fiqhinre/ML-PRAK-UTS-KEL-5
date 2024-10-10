@@ -1,0 +1,215 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: none;
+    text-align: center;
+}
+
+.header{
+    background-color: rgb(116, 9, 9);
+    height: 140px;
+    width: 1440px;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.logo-header{
+    width: 248.89px;
+    height: 140px;
+    margin-left: 50px;
+}
+
+.logo-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-landingpage{
+    width: 1440px;
+    height: 680px;
+}
+
+.image-landingpage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-judul{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(116, 9, 9, 80%);
+    position: absolute;
+    font-size: 80px;
+    width: 951px;
+    text-align: left;
+    margin-top: 73px;
+    margin-left: 92px;
+}
+
+.field-menu-header{
+    width: 414px;
+    height: 65px;
+    margin-top: 55px;
+    margin-left: 677.11px;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+}
+
+.button-deteksi{
+    width: 182px;
+    height: 65px;
+    margin-left: 50px;
+    background-color: rgb(87, 7, 7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cormorant Garamond", serif;
+    color: white;
+    font-size: 24px;
+}
+
+.field-definisi{
+    margin-top: 100px;
+    height: 669px;
+    width: 1440px;
+}
+
+.field-judul-definisi{
+    width: 520px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.judul-definisi{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(116, 9, 9);
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.isi-definisi{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: rgb(116, 9, 9);
+    margin-top: 12px;
+    margin-left: 50px;
+    width: 663px;
+    text-align: left;
+}
+
+.light-line{
+    width: 90px;
+    height: 5px;
+    background-color: rgb(116, 9, 9);
+    border-radius: 0 2.5px 2.5px 0;
+}
+
+.field-image-definisi{
+    width: 664px;
+    height: 669px;
+    margin-left: 750px;
+    position: absolute;
+}
+
+.image-1-definisi{
+    width: 446px;
+    height: 438px;
+}
+
+.image-1-definisi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-2-definisi{
+    width: 413px;
+    height: 529px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 250px;
+}
+
+.image-2-definisi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.line-section-frame{
+    width: 920px;
+    height: 10px;
+    background-color: rgb(116, 9, 9);
+    border-radius: 0 5px 5px 0;
+    margin-top: 160px;
+}
+
+.footer{
+    width: 1440px;
+    height: 160px;
+    background-color: rgb(116, 9, 9);
+    margin-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer{
+    width: 276px;
+    height: 155px;
+}
+
+.logo-footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-footer{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.result{
+    width: 1440px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: rgb(116, 9, 9);
+}

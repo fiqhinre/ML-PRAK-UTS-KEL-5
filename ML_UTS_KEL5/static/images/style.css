@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: none;
+    text-align: center;
+}
+
+.header{
+    background-color: rgb(116, 9, 9);
+    height: 140px;
+    width: 1440px;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.image-landingpage{
+    width: 1440px;
+    height: 680px;
+}
+
+.image-landingpage img{
+    width: 1440px;
+    height: 680px;
+    object-fit: cover;
+}
